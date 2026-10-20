@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIA Tech Stack: What Top Firms Actually Run On | PrivateWealthTech.com Insights</title>
+<meta name="description" content="Orion, Tamarac, Black Diamond, Redtail: what the fastest-growing RIAs actually run, layer by layer, and the technology stack decisions that compound in 2026.">
+<meta property="og:title" content="RIA Tech Stack: What Top Firms Actually Run On">
+<meta property="og:description" content="Orion, Tamarac, Black Diamond, Redtail: what the fastest-growing RIAs actually run, layer by layer, and the technology stack decisions that compound in 2026.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"RIA Tech Stack: What Top Firms Actually Run On","description":"Orion, Tamarac, Black Diamond, Redtail: what the fastest-growing RIAs actually run, layer by layer, and the technology stack decisions that compound in 2026.","author":{"@type":"Organization","name":"Prime Domain Capital"},"publisher":{"@type":"Organization","name":"Prime Domain Capital"},"datePublished":"2026-10-17","mainEntityOfPage":"https://privatewealthtech.com/insights/article2.html"}
+</script>
+<style>
+:root{--paper:#fafbfc;--ink:#0a1628;--navy:#0e2242;--blue:#2563eb;--blue-soft:#dbe7ff;--gray:#5b6b85;--line:#e4e9f2}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Manrope',sans-serif;line-height:1.7;overflow-x:hidden}
+.mono{font-family:'IBM Plex Mono',monospace}
+#grid{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px 48px;background:rgba(250,251,252,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .brand{font-weight:800;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--navy)}
+nav .brand a{color:inherit;text-decoration:none}
+nav .brand span{color:var(--blue)}
+nav .price-tag{font-size:13px;font-weight:600;color:var(--gray)}
+nav .price-tag b{color:var(--blue)}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--blue);margin-bottom:18px}
+.article-hero{position:relative;z-index:1;padding:160px 48px 60px;max-width:1280px;margin:0 auto}
+.back-link{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gray);text-decoration:none;margin-bottom:30px;transition:.3s}
+.back-link:hover{color:var(--blue)}
+.article-hero h1{font-weight:800;font-size:clamp(40px,6vw,84px);line-height:1.04;letter-spacing:-.03em;max-width:15ch;color:var(--ink)}
+.article-hero .deck{margin-top:26px;max-width:60ch;font-size:20px;color:var(--gray)}
+.byline{margin-top:26px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gray)}
+.byline b{color:var(--blue);font-weight:500}
+.band{margin:20px 0 0;position:relative;z-index:1}
+.band img{width:100%;height:420px;object-fit:cover}
+section{position:relative;z-index:1;padding:90px 48px;max-width:1280px;margin:0 auto}
+.body-copy{font-size:17px;color:var(--gray);max-width:66ch;margin-bottom:22px}
+.body-copy strong{color:var(--ink);font-weight:600}
+.art-h2{font-weight:800;font-size:clamp(28px,3.4vw,44px);line-height:1.1;letter-spacing:-.02em;margin:64px 0 26px;color:var(--ink);max-width:24ch}
+.pull{font-weight:700;font-size:clamp(22px,2.8vw,32px);line-height:1.35;letter-spacing:-.01em;border-left:3px solid var(--blue);padding-left:30px;margin:54px 0;color:var(--navy);max-width:28ch}
+.cta{background:var(--navy);text-align:center;padding:120px 48px;position:relative;z-index:1;overflow:hidden}
+.cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.18;z-index:-1}
+.cta h2{color:#fff;max-width:22ch;margin:0 auto 24px;font-weight:800;font-size:clamp(32px,4.2vw,54px);line-height:1.1;letter-spacing:-.02em}
+.cta .price{font-size:clamp(54px,6.5vw,88px);font-weight:800;color:#fff;letter-spacing:-.02em;margin-bottom:34px}
+.cta .price span{color:var(--blue)}
+.btn{display:inline-block;padding:17px 40px;background:var(--blue);color:#fff;text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;transition:.3s;border:1px solid var(--blue)}
+.btn:hover{background:var(--navy);border-color:var(--navy)}
+footer{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;padding:36px 48px;font-size:13px;color:var(--gray);border-top:1px solid var(--line);max-width:1280px;margin:0 auto}
+footer a{color:var(--blue);text-decoration:none;font-weight:600}
+@media(max-width:900px){nav,.article-hero,section{padding-left:24px;padding-right:24px}.band img{height:280px}}
+</style>
+</head>
+<body>
+<canvas id="grid"></canvas>
+<nav>
+  <div class="brand"><a href="../index.html">Prime Domain <span>Capital</span></a></div>
+  <div class="price-tag">BUY NOW &nbsp;<b>$42,888</b></div>
+</nav>
+<header class="article-hero">
+  <a class="back-link reveal" href="../index.html">&larr; privatewealthtech.com</a>
+  <div class="kicker reveal">Insights &middot; WealthTech</div>
+  <h1 class="reveal">RIA Tech Stack: What Top Firms Actually Run On</h1>
+  <p class="deck reveal">Orion, Tamarac, Black Diamond, Redtail: what the fastest-growing RIAs actually run, layer by layer, and the technology stack decisions that compound in 2026.</p>
+  <div class="byline reveal">By <b>Prime Domain Capital</b> &middot; October 2026</div>
+</header>
+<div class="band reveal"><img src="../images/photo4.jpg" alt="Analytics dashboard"></div>
+<section>
+  <p class="body-copy reveal">Monday morning at a $2 billion RIA. The COO has four browser tabs open, three CSV exports downloading, and a reconciliation that doesn&rsquo;t. The firm spent six figures on software last year. None of it talks to the rest.</p>
+  <p class="body-copy reveal">The modern RIA doesn&rsquo;t have a technology problem. It has an integration problem. According to Schwab&rsquo;s 2025 benchmarking data, 89% of top-performing RIAs treat technology as a strategic advantage rather than an operational necessity. The difference between those firms and everyone else is not how much they spend &mdash; it is how the pieces fit. Advisors don&rsquo;t adopt software. They adopt whatever removes the next manual step.</p>
+  <h2 class="art-h2 reveal">The four layers</h2>
+  <p class="body-copy reveal"><strong>Portfolio management and trading</strong> is the operational core &mdash; performance reporting, aggregation, rebalancing, model management, trade execution. This is where investment decisions become transactions, and the vendor choices here are the most consequential a firm makes.</p>
+  <p class="body-copy reveal">Orion is the industry standard for independent RIAs: portfolio accounting, trading and rebalancing through its Eclipse engine, reporting, billing, and client portals in one platform. According to X1 Wealth&rsquo;s 2026 advisor platforms comparison, 17 of the top 20 Barron&rsquo;s-ranked RIA firms run on Orion technology. In February 2026, Orion launched Denali AI Enterprise, pulling CRM, planning, portfolio management, and risk tools into a single connected AI view &mdash; the clearest signal yet that the all-in-one platforms intend to absorb the AI layer rather than cede it.</p>
+  <p class="body-copy reveal">Envestnet Tamarac is the choice for multi-advisor teams that want rebalancing, CRM, and reporting in a single system, with deep ties to the broader Envestnet ecosystem. Envestnet has raised its Tamarac technology investment to 2.5 times its prior level &mdash; including a $35 million commitment &mdash; as part of a five-year, $1 billion R&amp;D program. Its 2026 releases added Report Studio for RIAs, a customizable wealth management dashboard, and AI-assisted report migration now in beta, with a natural-language account-data agent following.</p>
+  <p class="body-copy reveal">SS&amp;C Black Diamond serves mid-to-large firms where portfolio analytics and accounting depth are the priority, supporting over 3,000 firms with Morningstar research embedded. Addepar owns the alternatives-heavy and institutional end &mdash; multi-asset-class accounting with the customization that family offices and large RIAs demand. Morningstar Advisor Workstation and eMoney fill the research-led and planning-integrated niches.</p>
+  <div class="pull reveal">The modern RIA doesn&rsquo;t have a technology problem. It has an integration problem.</div>
+  <p class="body-copy reveal"><strong>The CRM layer</strong> is where adoption is won or lost. Redtail holds broader market share with deeper integrations across legacy advisor tools. Wealthbox, with its cleaner interface, is the preferred choice for tech-forward firms onboarding staff new to advisor-specific CRM. Roughly 80% of RIAs run one of them. The choice usually comes down to which one the team will actually use &mdash; the best CRM is the one with complete data in it.</p>
+  <p class="body-copy reveal">Underpinning all four layers is data aggregation &mdash; the unglamorous plumbing that pulls positions and transactions from custodians every night. When aggregation breaks, every downstream number is suspect: performance reports misstate, billing miscalculates, and the CRM shows stale balances to the advisor walking into a client meeting. Firms that treat aggregation as infrastructure, monitored daily rather than repaired quarterly, report materially fewer reconciliation fires &mdash; and their advisors trust the numbers on screen.</p>
+  <p class="body-copy reveal"><strong>Financial planning</strong> &mdash; eMoney, MoneyGuidePro, RightCapital &mdash; has moved from differentiator to table stakes. What matters now is how tightly planning data flows into the portfolio and CRM layers. Orion&rsquo;s Denali, Tamarac&rsquo;s MoneyGuide integration, and Black Diamond&rsquo;s planning connectors all reflect the same insight: a plan that doesn&rsquo;t update when the portfolio moves is a PDF, not a system.</p>
+  <p class="body-copy reveal"><strong>The underinvested layers</strong> are where growth is being left on the table. Transition automation &mdash; the technology for onboarding advisors and their clients &mdash; sits at roughly 15% adoption. AI-powered compliance workflow automation is near 25%. CRM and portfolio management are near-universal; the tools that actually enable growth are adopted by fewer than a quarter of practices. Fidelity Clearing &amp; Custody projects that AI and automation tools could boost wealth manager productivity by 25 to 40% &mdash; for a three-advisor team, a 25% gain is a full-time operations hire without the headcount.</p>
+  <h2 class="art-h2 reveal">The build-vs-buy question</h2>
+  <p class="body-copy reveal">No platform wins on every dimension. Orion leads on breadth for domestic mid-market RIAs; Addepar on multi-asset complexity; Black Diamond on accounting depth; Tamarac on the integrated advisor desktop. FactSet and BlackRock&rsquo;s Aladdin Wealth serve the institutional end where analytics depth justifies enterprise implementation cost.</p>
+  <p class="body-copy reveal">The decision framework that works has five variables: client complexity, the compliance environment, product architecture, the team&rsquo;s actual adoption capacity, and integration depth with the custodian. Schwab, Fidelity, and Pershing integrations are not a footnote &mdash; reconciliation breaks, data lags, and manual workarounds live or die on custodial connectivity.</p>
+  <p class="body-copy reveal">The pattern among the fastest-growing firms is consistent: integrated stacks over best-of-breed point solutions, chosen for the integrations that eliminate the most manual steps first. Start with the reconciliation that eats Monday morning. Everything else is commentary.</p>
+  <p class="body-copy reveal"><em>The category-defining name in wealth management technology &mdash; privatewealthtech.com &mdash; is currently available for acquisition by the company that will own this space.</em></p>
+</section>
+<div class="cta">
+  <img src="../images/photo1.jpg" alt="">
+  <div class="kicker reveal" style="color:#9db1d4">Acquisition</div>
+  <h2 class="reveal">Own the category before a competitor does.</h2>
+  <div class="price reveal"><span>$</span>42,888</div>
+  <div class="reveal"><a class="btn" href="https://www.afternic.com/domain/privatewealthtech.com">Buy Now via Afternic</a></div>
+  <p class="reveal" style="margin-top:26px;color:#9db1d4;font-size:14px">Escrow.com secure transfer &middot; <a href="mailto:info@primedomaincapital.com" style="color:#fff">info@primedomaincapital.com</a></p>
+</div>
+<footer>
+  <span>Offered by <strong>Prime Domain Capital</strong></span>
+  <span><a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></span>
+</footer>
+<script>
+const c=document.getElementById('grid'),x=c.getContext('2d');let W,H;function rs(){W=c.width=innerWidth;H=c.height=innerHeight}rs();addEventListener('resize',rs);
+const dots=[];for(let i=0;i<120;i++)dots.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.4+.4});
+let mx=-999,my=-999;addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
+(function loop(){x.clearRect(0,0,W,H);for(const d of dots){const dx=d.x-mx,dy=d.y-my,dist=Math.hypot(dx,dy);let r=d.r,col='37,99,235';if(dist<140){r=d.r*2.4;col='37,99,235'}x.beginPath();x.arc(d.x,d.y,r,0,7);x.fillStyle=`rgba(${col},${dist<140?.5:.14})`;x.fill()}requestAnimationFrame(loop)})();
+const io=new IntersectionObserver(e=>e.forEach(v=>{if(v.isIntersecting){v.target.classList.add('in');io.unobserve(v.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5fb51d1999084c91989809d7608061e0"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
