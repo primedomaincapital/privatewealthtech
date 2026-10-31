@@ -111,24 +111,24 @@ footer a{color:var(--blue);text-decoration:none;font-weight:600}
 
 /* ---- market-data additions (staged page only) ---- */
 .data{max-width:920px;margin:0 auto;padding:130px 28px 80px}
-.data .stamp{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass,#c9a25e);margin-bottom:18px}
+.data .stamp{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#0a1628;margin-bottom:18px}
 .data h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(34px,6vw,64px);line-height:1.08;overflow-wrap:break-word;word-break:break-word;max-width:20ch}
 .data h2{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(24px,3.5vw,36px);line-height:1.2;margin:56px 0 16px;overflow-wrap:break-word;word-break:break-word}
-.data h3{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass,#c9a25e);margin:40px 0 12px}
+.data h3{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:#0a1628;margin:40px 0 12px}
 .data p{margin:0 0 18px;font-size:17px;line-height:1.75;overflow-wrap:break-word}
-.data .lede{font-size:20px;color:var(--cream-dim,#cfc4ae)}
+.data .lede{font-size:20px;color:#0a1628}
 .figwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:28px 0}
 table.figs{width:100%;border-collapse:collapse;min-width:560px;font-size:15.5px;line-height:1.6}
-table.figs th{text-align:left;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass,#c9a25e);padding:12px 14px;border-bottom:1px solid rgba(201,162,94,.45)}
-table.figs td{padding:14px;border-bottom:1px solid rgba(244,237,225,.14);vertical-align:top}
-table.figs td.v{white-space:nowrap;font-weight:600;color:#fff}
-.data a{color:var(--brass,#c9a25e);text-underline-offset:3px}
-.data .note{background:rgba(201,162,94,.08);border:1px solid rgba(201,162,94,.35);padding:22px 24px;margin:32px 0}
+table.figs th{text-align:left;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#0a1628;padding:12px 14px;border-bottom:1px solid rgba(0,0,0,.3)}
+table.figs td{padding:14px;border-bottom:1px solid rgba(0,0,0,.15);vertical-align:top}
+table.figs td.v{white-space:nowrap;font-weight:600;color:inherit}
+.data a{color:#0a1628;text-underline-offset:3px}
+.data .note{background:rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.25);padding:22px 24px;margin:32px 0}
 .data .note p:last-child{margin-bottom:0}
-.buybox{border:1px solid rgba(201,162,94,.5);padding:28px;margin:48px 0;text-align:center}
-.buybox .price{font-family:'Fraunces',serif;font-size:clamp(30px,5vw,48px);color:var(--brass,#c9a25e);margin:10px 0}
-.buybox a.btn{display:inline-block;padding:16px 36px;background:var(--brass,#c9a25e);color:#14100c;text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;min-height:48px;line-height:1.2}
-.buybox a.mail{color:var(--cream,#f4ede1)}
+.buybox{border:1px solid rgba(0,0,0,.3);padding:28px;margin:48px 0;text-align:center}
+.buybox .price{font-family:'Fraunces',serif;font-size:clamp(30px,5vw,48px);color:#8a6f3e;margin:10px 0}
+.buybox a.btn{display:inline-block;padding:16px 36px;background:#8a6f3e;color:#ffffff;text-decoration:none;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;min-height:48px;line-height:1.2}
+.buybox a.mail{color:inherit}
 .srcs{font-size:14.5px;line-height:1.8}
 .srcs li{margin-bottom:8px;overflow-wrap:break-word}
 @media(max-width:560px){.data{padding:110px 20px 60px}.data p{font-size:16px}table.figs{min-width:0;font-size:14.5px}table.figs td.v{white-space:normal}}
@@ -141,6 +141,17 @@ table.figs td.v{white-space:nowrap;font-weight:600;color:#fff}
 /* Phase 1 assembly 2026-10-31 — nav solid correction */
 @media (max-width:900px){nav{background:rgb(250,251,252)!important;backdrop-filter:none!important}}
 </style>
+<style>
+/* Mobile rendering fix 2026-10-31: domain H1 lines, stacked nav, header clearance */
+@media (max-width:900px){
+main h1{overflow-wrap:normal!important;word-break:normal!important}
+nav:not(.toc){flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+.topbar{flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+main{padding-top:120px!important}
+main h1 .h1-domain{display:block!important;font-size:clamp(19px,6vw,28px)!important;letter-spacing:0!important;word-break:keep-all!important;overflow-wrap:normal!important;line-height:1.25!important}
+main h1 .h1-title{display:block!important}
+}
+</style>
 </head>
 <body>
 <nav>
@@ -149,7 +160,7 @@ table.figs td.v{white-space:nowrap;font-weight:600;color:#fff}
 </nav>
 <main class="data">
 <p class="stamp">Market Data &middot; Last updated: October 25, 2026</p>
-<h1>PrivateWealthTech.com Market Data</h1>
+<h1><span class="h1-domain">PrivateWealthTech.<wbr>com</span> <span class="h1-title">Market Data</span></h1>
 <p class="lede">Wealth firms now spend millions a year on technology per firm, and the market estimates for the sector disagree with each other by a factor of three. Both facts matter.</p>
 <p>Ask a room of wealth executives what their technology stack costs and you will get a precise answer. Ask the research industry how big wealth technology is and you will get a spread: $5.21 billion for 2024 from one firm, $18.32 billion from another. The gap is scope. Narrow definitions count platforms and software; broad ones sweep in services, advice delivery, and adjacent fintech revenue. This page shows both, labeled, because hiding the disagreement would be worse than reporting it.</p>
 <p>The spending figures inside firms are less contested. Cerulli Associates, surveying large RIAs, found average technology spending projected at $3.3 million per firm, up from $2.9 million, with AI-specific spending set to more than double to $494,000 per firm from $237,000. The firms surveyed averaged $18 billion in assets under management — large firms, in other words, spending real money to keep advisors productive rather than to replace them.</p>
@@ -163,7 +174,7 @@ table.figs td.v{white-space:nowrap;font-weight:600;color:#fff}
 <tr><td>WealthTech market forecast, 2030; CAGR 2025–2030</td><td class="v">$71.59 billion; 25.5%</td><td><a href="https://www.nextmsc.com/report/wealthtech-market-bf3513">Next Move Strategy Consulting, public summary</a></td><td>▲ Projected growth vs 2024: $18.32 billion (same Next Move series)</td></tr>
 <tr><td>Average RIA technology spending per firm, projected (from prior year)</td><td class="v">$3.3 million (from $2.9 million)</td><td><a href="https://www.barrons.com/advisor/articles/cerulli-research-advisors-ai-spend-hiring-f983a0b0">Cerulli Associates via Barron's</a></td><td>▲ Up vs prior year: $2.9 million</td></tr>
 <tr><td>Average RIA AI-specific spending per firm, projected (from 2025)</td><td class="v">$494,000 (from $237,000)</td><td><a href="https://www.barrons.com/advisor/articles/cerulli-research-advisors-ai-spend-hiring-f983a0b0">Cerulli Associates via Barron's</a></td><td>▲ Up vs 2025: $237,000</td></tr>
-<tr><td>Advisors saying technology influenced a recent broker-dealer move</td><td class="v">57%</td><td><a href="https://www.connectmoney.com/stories/advisor-moves-to-set-3-4t-in-motion-this-year/">Cerulli via Connect Money</a></td><td>▼ Down vs prior year: $23.1 billion (down 65%)</td></tr>
+<tr><td>Advisors saying technology influenced a recent broker-dealer move</td><td class="v">57%</td><td><a href="https://www.connectmoney.com/stories/advisor-moves-to-set-3-4t-in-motion-this-year/">Cerulli via Connect Money</a></td><td>Baseline (October 2026) — trend tracking starts with the next refresh</td></tr>
 <tr><td>U.S. WealthTech funding, 2024 (from prior year)</td><td class="v">$8.2 billion (from $23.1 billion, down 65%)</td><td><a href="https://fintech.global/globalwealthtechsummitusa/what-are-the-wealthtech-markets-to-watch-in-2025/">FinTech Global research, public summary</a></td><td>▼ Down vs prior year: $23.1 billion (down 65%)</td></tr>
 <tr><td>Independent RIA channel assets (retail subsegment)</td><td class="v">$3.5 trillion</td><td><a href="https://www.wealthmanagement.com/ria-news/managed-assets-in-retail-channel-returning-to-parity-with-institutional">Cerulli via WealthManagement.com</a></td><td>Baseline (October 2026) — trend tracking starts with the next refresh</td></tr>
 </table></div>
@@ -174,7 +185,7 @@ table.figs td.v{white-space:nowrap;font-weight:600;color:#fff}
 <p>Included: public research summaries of market size (two scopes, both labeled), Cerulli survey spending figures as reported by Barron's and Connect Money, and FinTech Global funding totals. Excluded: paywalled Cerulli report detail, vendor press-release revenue claims that could not be cross-checked, and any figure behind a login or paywall. Figures were chosen to show both the market's size and what firms actually spend.</p>
 <div class="note"><p><strong>Disclaimer.</strong> Public figures change as new reports are published, and estimates from different firms are built on different definitions, so a single headline total should never be read as a precise count. Figures on this page are aggregated public estimates compiled for information only. They are not investment, legal, tax, or professional advice, and they do not predict future results. Where sources disagree, both figures are shown and the difference is explained rather than averaged away.</p></div>
 <div class="buybox">
-<p style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-dim,#cfc4ae)">This domain is offered for sale</p>
+<p style="font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#0a1628">This domain is offered for sale</p>
 <p class="price">Buy Now &mdash; $42,888</p>
 <p><a class="btn" href="https://www.afternic.com/domain/privatewealthtech.com">Buy on Afternic</a></p>
 <p style="margin-top:18px">Questions: <a class="mail" href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></p>
